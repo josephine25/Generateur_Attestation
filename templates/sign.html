@@ -32,64 +32,63 @@
                 <h1 class="display-4">Inscription</h1>
                 <p class="lead">Bienvenue sur votre générateur automatique d'attestation! </p>
                 <div class="col .mx-auto">
-                        <form class=" justify-content-center" action="/chat">
+                        <form class=" justify-content-center" action="/inscription/" method="POST" >
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                            <label for="email1">Email</label>
+                            <input type="email" class="form-control" id="email1"  name="email1" >
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputPassword4">Mot de passe</label>
-                            <input type="password" class="form-control" id="inputPassword4">
+                            <label for="password1">Mot de passe</label>
+                            <input  type="password" class="form-control" id="password1"  name="password1" >
                         </div>
                     </div>
                              <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="nom">Nom</label>
-                            <input type="text" class="form-control" id="nom">
+                            <label for="nom1">Nom</label>
+                            <input  type="text" class="form-control" id="nom1" name="nom1">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="prenom">Prenom</label>
-                            <input type="text" class="form-control" id="prenom">
+                            <label for="prenom1">Prenom</label>
+                            <input  type="text" class="form-control" id="prenom1" name="prenom1">
                         </div>
                     </div>
                                <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="datena">Date de naissance</label>
-                            <input type="date" class="form-control" id="datena">
+                            <label for="datena1">Date de naissance</label>
+                            <input  type="text" class="form-control" id="datena1" name="datena1">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="lieuna">Lieu de naissance</label>
-                            <input type="text" class="form-control" id="lieuna">
+                            <label for="lieuna1">Lieu de naissance</label>
+                            <input   type="text" class="form-control" id="lieuna1" name="lieuna1">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="inputAddress">Adresse</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        <label for="adress1">Adresse</label>
+                        <input  type="text" class="form-control" id="adress1" name="adress1">
                     </div>
                     <div class="form-group">
-                        <label for="inputAddress2">Complement</label>
-                        <input type="text" class="form-control" id="inputAddress2"
-                               placeholder="Apartment, studio, or floor">
+                        <label for="adress2">Complement</label>
+                        <input  type="text" class="form-control" id="adress2"
+                               name="adress2">
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputCity">Ville</label>
-                            <input type="text" class="form-control" id="inputCity">
+                            <label for="ville1">Ville</label>
+                            <input  type="text" class="form-control" id="ville1" name="ville1">
                         </div>
 
                         <div class="form-group col-md-2">
-                            <label for="inputZip">code postale</label>
-                            <input type="text" class="form-control" id="inputZip">
+                            <label for="postale1">code postale</label>
+                            <input  type="text" class="form-control" id="postale1" name="postale1">
                         </div>
                         <div class="form-group col-md-4">
                             <label for="remotdepasse">Ressaisir le mot de passe</label>
-                            <input type="password" class="form-control" id="remotdepasse">
+                            <input  type="password" class="form-control" id="remotdepasse" name="remotdepasse">
                         </div>
                     </div>
-
-                    <button type="submit" class="btn btn-primary">Valider</button>
+                    <button class="btn btn-primary btn-lg" type="submit">Valider</button>
                 </form>
                 </div>
             </div>
@@ -99,5 +98,7 @@
 </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
 
 </html>

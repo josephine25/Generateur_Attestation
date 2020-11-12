@@ -1,7 +1,9 @@
 from pymongo import MongoClient
 from werkzeug.security import generate_password_hash
 
+
 from user import User
+
 
 client = MongoClient("your_mongodb_uri_here")
 
